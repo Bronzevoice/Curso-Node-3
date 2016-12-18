@@ -1,0 +1,11 @@
+{
+  "name": "CursoNode",
+  "description": "Este es el curso de Node",
+  "version": "0.0.1",
+  "author": "Daniel Moreno",
+  "dependencies": {
+    "express": "^4.14.0",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {}
+}
