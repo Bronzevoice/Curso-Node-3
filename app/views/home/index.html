@@ -1,0 +1,178 @@
+{% extends '../base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-6">
+				<span class="head-title">
+					<h1>Bienvenido a DevAsk!!</h1>
+				</span>
+				<p>Bienvenido al Sistema de Discusiones para Programadores</p>
+				<p>
+					<a href="" class="btn btn-btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">
+						Haz tu Pregunta!!</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-3 col-md-6">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default">Todas
+					</button>
+					<button type="button" class="btn btn-default">Top 5
+					</button>
+					<button type="button" class="btn btn-default">Favoritos
+					</button>
+				</div>
+				<div class="media border">
+					
+				</div>
+
+				<div class="media border">
+					<div class="media-body">
+
+						<h4 class="media-heading">
+
+							<a href=""><img src="/img/ask.png" class="avatar img-circle" style="width:5%"><span
+								class="usuario">  Usuario</span>
+							</a>
+							<small class="pull-right"><span class="glyphicon glyphicon-time"></span> 12 min ago</small>
+						</h4>
+						<p>
+							Lorem fistrum a wan al ataquerl fistro de la pradera llevame al sircoo tiene musho peligro.
+							Apetecan a gramenawer pecador no te digo trigo por no llamarte Rodrigor pupita quietooor.
+						</p>
+						<p>
+							<a href="">
+								<span class="label label-warning pull-right">
+									<span class="glyphicon glyphicon-star"></span> Favoritos </span>
+								</a>
+
+								<span class="label pull-right"> </span>
+
+								<a href="">
+									<span class="label label-warning pull-right">
+										<span class="glyphicon glyphicon-thumbs-up"></span> Like </span>
+									</a>
+								</p>
+							</div>
+						</div>
+
+						
+				<div class="media border">
+					<div class="media-body">
+
+						<h4 class="media-heading">
+
+							<a href=""><img src="/img/ask.png" class="avatar img-circle" style="width:5%"><span
+								class="usuario">  Usuario</span>
+							</a>
+							<small class="pull-right"><span class="glyphicon glyphicon-time"></span> 12 min ago</small>
+						</h4>
+						<p>
+							Lorem fistrum a wan al ataquerl fistro de la pradera llevame al sircoo tiene musho peligro.
+							Apetecan a gramenawer pecador no te digo trigo por no llamarte Rodrigor pupita quietooor.
+						</p>
+						<p>
+							<a href="">
+								<span class="label label-warning pull-right">
+									<span class="glyphicon glyphicon-star"></span> Favoritos </span>
+								</a>
+
+								<span class="label pull-right"> </span>
+
+								<a href="">
+									<span class="label label-warning pull-right">
+										<span class="glyphicon glyphicon-thumbs-up"></span> Like </span>
+									</a>
+								</p>
+							</div>
+						</div>
+
+
+				<div class="media border">
+					<div class="media-body">
+
+						<h4 class="media-heading">
+
+							<a href=""><img src="/img/ask.png" class="avatar img-circle" style="width:5%"><span
+								class="usuario">  Usuario</span>
+							</a>
+							<small class="pull-right"><span class="glyphicon glyphicon-time"></span> 12 min ago</small>
+						</h4>
+						<p>
+							Lorem fistrum a wan al ataquerl fistro de la pradera llevame al sircoo tiene musho peligro.
+							Apetecan a gramenawer pecador no te digo trigo por no llamarte Rodrigor pupita quietooor.
+						</p>
+						<p>
+							<a href="">
+								<span class="label label-warning pull-right">
+									<span class="glyphicon glyphicon-star"></span> Favoritos </span>
+								</a>
+
+								<span class="label pull-right"> </span>
+
+								<a href="">
+									<span class="label label-warning pull-right">
+										<span class="glyphicon glyphicon-thumbs-up"></span> Like </span>
+									</a>
+						</p>
+							</div>
+						</div>
+
+									</div>
+								</div>
+							</div>
+
+
+							<!--Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" arial-labelledby="myModalLabel" aria-hidden="true">
+
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title">Formulario de Pregunta</h4>
+											</div>
+											<div class="modal-body">
+												<form class="form-horizontal" role="form" method="post" action="/guardar-pregunta">
+													<div class="form-group">
+														<label for="inputEmail3" class="col-sm-2 control-label">Título</label>
+														<div class="col-sm-10">
+															<input type="text" class="form-control" placeholder="Título" name="title">
+														</div>
+													</div>
+
+													<div class="form-group">
+														<label for="inputPassword3" class="col-sm-2 control-label">Contenido</label>
+														<div class="col-sm-10">
+															<textarea type="content" class="form-control" placeholder="Contenido" name="title" rows="4"></textarea>
+														</div>
+													</div>
+
+
+													<div class="modal-footer">
+														<button type="button" class="btn btn-btn" data-dismiss="modal">Atrás</button>
+														<input type="submit" class="btn btn-btn btn-warning" value="Preguntar">
+													</div>
+
+												</form>
+
+											</div>
+
+										</div><!-- /.modal-content -->
+									</div><!-- /.modal-dialog -->
+								</div><!-- /.modal -->
+
+
+								{% endblock %}
+
+								{% block js %}
+
+								{% endblock %}
+

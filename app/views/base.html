@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dev Ask</title>
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-default sin-margen-inferior" role='navigation'>
+		<div class='container'>
+			<div class='row'>
+				<div class="col-md-offset-2 col-md-8">
+					<div class="navbar-header">
+						<a href="" class='navbar-brand'>DevAsk</a>	
+					</div>
+			
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">
+							<strong>Menu </strong><span class="glyphicon glyphicon-chevron-down"></span>
+						</a>
+						<ul class="dropdown-menu ">
+							<li><a href="">Log In with facebook</a></li>
+							<li class="divider"></li>
+							<li><a href="">Log In with twitter</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			   </div>
+			</div>
+		 </div>
+	</nav>
+
+	{% block content %}
+
+	{% endblock %}
+
+	<script src='/js/jquery-3.1.1.js'></script>
+	<script src='/js/bootstrap.js'></script>
+
+	{% block js %}
+	{% endblock %}
+
+</body>
+</html>
