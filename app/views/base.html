@@ -18,16 +18,39 @@
 			
 
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
+				{% if name %}
+
+				<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="" alt="..." class="img-reounded" width="32px" height="32px">
+							<strong>{{ name }}</strong>
+							<span class="gluphicon glyphicon-chevron-down"></span>
+						</a>
+						<ul class="dropdown-menu ">
+						<li><a href="detalle">Chat</a></li>
+						<li class="divider"></li>
+						<li><a href="/detalle">Salir</a></li>
+						</ul>
+					</li>
+					
+
+				{% else %}
+
+					
+
+						<li class="dropdown">
 						<a href="" class="dropdown-toggle" data-toggle="dropdown">
 							<strong>Menu </strong><span class="glyphicon glyphicon-chevron-down"></span>
 						</a>
 						<ul class="dropdown-menu ">
-							<li><a href="">Log In with facebook</a></li>
+							<li><a href="/auth/facebook">Log In with facebook</a></li>
 							<li class="divider"></li>
 							<li><a href="">Log In with twitter</a></li>
 						</ul>
 					</li>
+					
+				{% endif %}
+				
 					
 				</ul>
 			   </div>
