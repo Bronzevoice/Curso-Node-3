@@ -41,5 +41,7 @@ require('./app/controllers/home')(server);
 
 //connections
 require('./app/connections/facebook')(server);
+require('./app/connections/twitter')(server);
+
 
 server.listen(8000);
