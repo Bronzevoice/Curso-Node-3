@@ -1,4 +1,4 @@
-var passport = require('passport'),
+/**var passport = require('passport'),
     TwitterStrategy = require('passport-twitter').Strategy;
 
 
@@ -16,4 +16,4 @@ var twitterConnection = function (server){
     server.get('/auth/twitter/callback', passport.authenticate('twitter', { successRedirect : '/' , failureRedirect :  '/error'}));
 };
 
-module.exports = twitterConnection;
+module.exports = twitterConnection;*/

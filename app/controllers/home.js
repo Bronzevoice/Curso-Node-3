@@ -4,12 +4,10 @@ var homeController = function(server){
 		server.route('/')
 		.get(function(req,res){
 			if(req.user){
-				var hola = req.user.displayName;
-				console.log(hola);
+				var aName = req.user.displayName;
 				res.render("home/index", {
-					name : hola
+					name : aName
 				});
-			
 			}
 			else{
 				res.render('home/index');	

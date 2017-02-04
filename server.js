@@ -36,12 +36,15 @@ server.set('views', __dirname + '\\app\\views');
 
 server.use(express.static('./public'));
 
-//home
+//Controllers
 require('./app/controllers/home')(server);
+require('./app/controllers/user')(server);
+
+
 
 //connections
 require('./app/connections/facebook')(server);
-require('./app/connections/twitter')(server);
+//require('./app/connections/twitter')(server);
 
 
 server.listen(8000);
