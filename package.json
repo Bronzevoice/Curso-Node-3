@@ -4,9 +4,11 @@
   "version": "0.0.1",
   "author": "Daniel Moreno",
   "dependencies": {
+    "body-parser": "^1.16.1",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "express-session": "^1.14.2",
+    "mongoose": "^4.8.2",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
     "passport-twitter": "^1.0.4",
